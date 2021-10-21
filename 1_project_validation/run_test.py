@@ -25,7 +25,7 @@ def test_scenario(params):
                 smoketest_scenario = True
             else:
                 print(f"Smoke Test Error was: {moke_scenario_run.get_details().first_error_details}")
-            if smoke_scenario_run.outcome == "SUCCESS":
+            if unit_scenario_run.outcome == "SUCCESS":
                 unit_scenario_run = True
             else:
                 print(f"Unit Test Error was: {smoke_scenario_run.get_details().first_error_details}")
